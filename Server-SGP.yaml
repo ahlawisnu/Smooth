@@ -1,0 +1,17 @@
+proxies:
+#==// proxies: wajib ada di barisan pertama //==#
+#===// Isi akun di bawah text hijau ini //===#
+
+- name: Ocean 2 Day
+  server: beacon.liveon.id
+  port: 443
+  type: trojan
+  password: 5f258b14-1295-4537-9afb-8ced175f4914
+  skip-cert-verify: true
+  sni: sg-do2.sshpremium.my.id
+  network: ws
+  ws-opts:
+    path: /trojanws
+    headers:
+      Host: sg-do2.sshpremium.my.id
+  udp: true
