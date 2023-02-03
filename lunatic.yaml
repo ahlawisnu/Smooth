@@ -1,43 +1,52 @@
 ---
 rule-providers:
   Direct:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/direct.yaml
     behavior: classical
     path: "./rule_provider/direct.yaml"
   Reject:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/reject.yaml
     behavior: classical
     path: "./rule_provider/reject.yaml"
   Multimedia-ID:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/Multimedia-ID.yaml
     behavior: classical
     path: "./rule_provider/Multimedia-ID.yaml"
   Streaming-SG:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/Streaming-SG.yaml
     behavior: classical
     path: "./rule_provider/Streaming-SG.yaml"
   Ads-Block:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/adblock.yaml
     behavior: classical
     path: "./rule_provider/adblock.yaml"
   Whatsapp:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/whatsapp.yaml
     behavior: classical
     path: "./rule_provider/whatsapp.yaml"
   Speedtest:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/speedtest.yaml
     behavior: classical
     path: "./rule_provider/speedtest.yaml"
 proxy-providers:
   SVR-ID:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/Server-IDN.yaml
     path: "./proxy_provider/Server-IDN.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 300
   SVR-SG:
-    type: file
+    type: http
+    url: https://raw.githubusercontent.com/ahlawisnu/Smooth/main/Server-SGP.yaml
     path: "./proxy_provider/Server-SGP.yaml"
     health-check:
       enable: true
