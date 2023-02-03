@@ -1,4 +1,30 @@
 
 #==// proxies: wajib ada di barisan pertama //==#
 #===// Isi akun di bawah text ini //===#
+proxies:
 
+  - name: bug.con
+
+    server: bug.con
+
+    port: 443
+
+    type: trojan
+
+    password: 893ff5d0-a35f-11ed-a69d-1239d0255272
+
+    skip-cert-verify: true
+
+    sni: br1-trojan.bonds.id
+
+    network: ws
+
+    ws-opts:
+
+      path: /howdy
+
+      headers:
+
+        Host: br1-trojan.bonds.id
+
+    udp: true
